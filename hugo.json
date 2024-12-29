@@ -1,0 +1,13 @@
+{
+    "baseURL": "https://cyanovation.studio/",
+    "languageCode": "en-us",
+    "title": "Cyanovation",
+    "theme": "PaperMod",
+    "params": {
+        "env": "production",
+        "homeInfoParams": {
+            "title": "Welcome to Studio #033",
+            "content": "A cinematography studio."
+        }
+    }
+}
