@@ -1,0 +1,95 @@
+:root {
+    --cyan-light: #00aaaa;
+}
+
+.v-leading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.h-stack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    /* gap: 10px; 控制子元素之间的间距 */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* 防止滚动条 */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* 链接样式 */  
+
+a {
+    text-decoration: none;
+    color: var(--cyan-light);
+    transition: color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+/* 容器样式 */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh; /* 占满整个视口高度 */
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box; /* 防止padding影响容器大小 */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%; /* 限制最大宽度 */
+    margin: 0 auto; /* 水平居中 */
+}
+
+/* 标题样式 */
+h1 {
+    font-size: 2.5em; /* 响应式字体大小 */
+    color: #333;
+    margin: 0 0 20px 0;
+}
+
+/* 段落样式 */
+p {
+    font-size: 1.2em;
+    color: #666;
+    margin: 0 0 20px 0;
+}
+
+/* 图片样式 */
+.container img {
+    max-width: 100%; /* 图片最大宽度为容器宽度 */
+    max-height: 50vh; /* 图片最大高度为视口高度的50% */
+    width: auto; /* 宽度自适应 */
+    height: auto; /* 高度自适应 */
+    object-fit: contain; /* 保持图片比例，完整显示 */
+    border-radius: 10px; /* 圆角效果 */
+    margin: 20px 0; /* 上下边距 */
+}
+
+/* 响应式字体大小 */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .container img {
+        max-height: 40vh; /* 在小屏幕上进一步限制图片高度 */
+    }
+}
