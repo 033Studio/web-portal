@@ -5,7 +5,7 @@
 .v-leading {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: flex-start;
 }
 
@@ -60,11 +60,11 @@ p {
 }
 
 /* 响应式字体大小 */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     h1 {
         font-size: 3em;
     }
     p {
         font-size: 1em;
     }
-}
+} */
